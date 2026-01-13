@@ -12,6 +12,11 @@ updates:
     labels:
       - "patch-day"
     open-pull-requests-limit: 10
-    security-updates-only: true
     commit-message:
       prefix: "security"
+    ignore:
+      - dependency-name: "*"
+        update-types:
+          - "version-update:semver-major"
+          - "version-update:semver-minor"
+          - "version-update:semver-patch"
