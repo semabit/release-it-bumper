@@ -1,22 +1,22 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/"
+  - package-ecosystem: 'npm'
+    directory: '/'
     schedule:
-      interval: "monthly"
-      day: "tuesday"
-      time: "06:00"
-      timezone: "Europe/Berlin"
+      interval: 'monthly'
+      day: 'tuesday'
+      time: '06:00'
+      timezone: 'Europe/Berlin'
     assignees:
-      - "driiftkiing"
+      - 'driiftkiing'
     labels:
-      - "patch-day"
+      - 'patch-day'
     open-pull-requests-limit: 10
     commit-message:
-      prefix: "security"
+      prefix: 'security'
     ignore:
-      - dependency-name: "*"
+      - dependency-name: '*'
         update-types:
-          - "version-update:semver-major"
-          - "version-update:semver-minor"
-          - "version-update:semver-patch"
+          - 'version-update:semver-major'
+          - 'version-update:semver-minor'
+          - 'version-update:semver-patch'
