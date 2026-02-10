@@ -866,7 +866,7 @@ __metadata:
     prettier: "npm:@btmills/prettier@latest"
     release-it: "npm:^19.2.4"
     sinon: "npm:^7.3.2"
-    xml2js: "npm:^0.4.22"
+    xml2js: "npm:^0.5.0"
     yamljs: "npm:^0.3.0"
   peerDependencies:
     release-it: ^19.2.4
@@ -2188,35 +2188,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"es-abstract@npm:^1.5.1":
-  version: 1.14.1
-  resolution: "es-abstract@npm:1.14.1"
-  dependencies:
-    es-to-primitive: "npm:^1.2.0"
-    function-bind: "npm:^1.1.1"
-    has: "npm:^1.0.3"
-    has-symbols: "npm:^1.0.0"
-    is-callable: "npm:^1.1.4"
-    is-regex: "npm:^1.0.4"
-    object-inspect: "npm:^1.6.0"
-    object-keys: "npm:^1.1.1"
-    string.prototype.trimleft: "npm:^2.0.0"
-    string.prototype.trimright: "npm:^2.0.0"
-  checksum: 10c0/0157d55c1a1f811494386bcc145b146f4f046d8ddd651d00a0992c3002c176b2afa3a10913748d9e9992221fb3434f1984d8e5a645948c836ad1b577c36dede4
-  languageName: node
-  linkType: hard
-
-"es-to-primitive@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "es-to-primitive@npm:1.2.0"
-  dependencies:
-    is-callable: "npm:^1.1.4"
-    is-date-object: "npm:^1.0.1"
-    is-symbol: "npm:^1.0.2"
-  checksum: 10c0/c239e109b3ae1f679e9024e291beb2c67673d37922f4497932fb812ec1390c905301fc4246f6973846400815673dc487aa5655630ae7c0435aed9e63463fdaac
-  languageName: node
-  linkType: hard
-
 "es6-error@npm:^4.0.1":
   version: 4.1.1
   resolution: "es6-error@npm:4.1.1"
@@ -2498,7 +2469,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"function-bind@npm:^1.0.2, function-bind@npm:^1.1.1":
+"function-bind@npm:^1.1.1":
   version: 1.1.1
   resolution: "function-bind@npm:1.1.1"
   checksum: 10c0/60b74b2407e1942e1ed7f8c284f8ef714d0689dcfce5319985a5b7da3fc727f40b4a59ec72dc55aa83365ad7b8fa4fac3a30d93c850a2b452f29ae03dbc10a1e
@@ -2756,7 +2727,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"has@npm:^1.0.1, has@npm:^1.0.3":
+"has@npm:^1.0.1":
   version: 1.0.3
   resolution: "has@npm:1.0.3"
   dependencies:
@@ -2976,13 +2947,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-callable@npm:^1.1.4":
-  version: 1.1.4
-  resolution: "is-callable@npm:1.1.4"
-  checksum: 10c0/7302084d6afb6f485e7aa41456edbe4ca69716c86781f5ff6a63e3ddc27fecfeeffc9b371a0ecdd1a3ee09469f76db801f92fd3c2ec0fb583d1ce70d01e5bad6
-  languageName: node
-  linkType: hard
-
 "is-ci@npm:^2.0.0":
   version: 2.0.0
   resolution: "is-ci@npm:2.0.0"
@@ -3196,15 +3160,6 @@ __metadata:
   version: 3.0.0
   resolution: "is-stream@npm:3.0.0"
   checksum: 10c0/eb2f7127af02ee9aa2a0237b730e47ac2de0d4e76a4a905a50a11557f2339df5765eaea4ceb8029f1efa978586abe776908720bfcb1900c20c6ec5145f6f29d8
-  languageName: node
-  linkType: hard
-
-"is-symbol@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "is-symbol@npm:1.0.2"
-  dependencies:
-    has-symbols: "npm:^1.0.0"
-  checksum: 10c0/fdc069bd8e3465d9627c5a4aec432431da03a94aedb3e0c00f982557195894168ee43b71f7a0d355482e11d3dfe0b2b6d2b0bfa190dfb550578749f066b9471d
   languageName: node
   linkType: hard
 
@@ -4132,13 +4087,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"object-inspect@npm:^1.6.0":
-  version: 1.6.0
-  resolution: "object-inspect@npm:1.6.0"
-  checksum: 10c0/7dd44b1e5ae48890f6bcbb5bbcbe0cf6e50a970621974c54b5cb10232371f66fcc33bf564316340ec0ab98e07dd37b6606b5e2479fdbb01cd6c03b4a22c7d7f7
-  languageName: node
-  linkType: hard
-
 "object-is@npm:^1.0.1":
   version: 1.0.1
   resolution: "object-is@npm:1.0.1"
@@ -4162,16 +4110,6 @@ __metadata:
     has-symbols: "npm:^1.0.0"
     object-keys: "npm:^1.0.11"
   checksum: 10c0/86e6c2a0c169924dc5fb8965c58760d1480ff57e60600c6bf32b083dc094f9587e9e765258485077480e70ae4ea10cf4d81eb4193e49c197821da37f0686a930
-  languageName: node
-  linkType: hard
-
-"object.getownpropertydescriptors@npm:^2.0.3":
-  version: 2.0.3
-  resolution: "object.getownpropertydescriptors@npm:2.0.3"
-  dependencies:
-    define-properties: "npm:^1.1.2"
-    es-abstract: "npm:^1.5.1"
-  checksum: 10c0/d82d5707ed3785e3c1bf17148f4678567bfb7c36f53c5897b5f7bd1cdf93a817b6ac5993f7ef91b3ba9b034119b35c3a29e56a3453a1fb86c2b3ff2c6c266e84
   languageName: node
   linkType: hard
 
@@ -5435,26 +5373,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"string.prototype.trimleft@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "string.prototype.trimleft@npm:2.0.0"
-  dependencies:
-    define-properties: "npm:^1.1.2"
-    function-bind: "npm:^1.0.2"
-  checksum: 10c0/415b7bdc26ace6fdd2960b888404c321ec15cda961d95ebf53c73fe4936b49d401005337bc1ec12e5dc29ca8c35497a4331e84af4c1de50a2161d7c7b5010ed2
-  languageName: node
-  linkType: hard
-
-"string.prototype.trimright@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "string.prototype.trimright@npm:2.0.0"
-  dependencies:
-    define-properties: "npm:^1.1.2"
-    function-bind: "npm:^1.0.2"
-  checksum: 10c0/807831c5b5143225b1ddc24aba061de10e2db8f010dbc0d558d2d386422ddef7688bf6905945bb9b7a0705404fac487f3d3f58eb9314b5b042509b78c983c362
-  languageName: node
-  linkType: hard
-
 "strip-ansi@npm:^4.0.0":
   version: 4.0.0
   resolution: "strip-ansi@npm:4.0.0"
@@ -5845,16 +5763,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"util.promisify@npm:~1.0.0":
-  version: 1.0.0
-  resolution: "util.promisify@npm:1.0.0"
-  dependencies:
-    define-properties: "npm:^1.1.2"
-    object.getownpropertydescriptors: "npm:^2.0.3"
-  checksum: 10c0/af9df9d111b1464586e4fa414ccf6de61c3a14c0664a66a497438a0507d47f65389f5e025c048ef7e2bf6dba73e95adc3d0c56111a0952ae0282817fc4dd83b2
-  languageName: node
-  linkType: hard
-
 "validate-npm-package-license@npm:^3.0.1":
   version: 3.0.4
   resolution: "validate-npm-package-license@npm:3.0.4"
@@ -6003,14 +5911,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"xml2js@npm:^0.4.22":
-  version: 0.4.22
-  resolution: "xml2js@npm:0.4.22"
+"xml2js@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "xml2js@npm:0.5.0"
   dependencies:
     sax: "npm:>=0.6.0"
-    util.promisify: "npm:~1.0.0"
     xmlbuilder: "npm:~11.0.0"
-  checksum: 10c0/c01d290dcd6bb9c10bae15ba97ce799bcea0ec65c3f7116b7c170e5fb87b8ab4c31a4000b6e7813a2c3c872cfa58eb8dd0388b148d2bf5cd848324a4756be254
+  checksum: 10c0/c9cd07cd19c5e41c740913bbbf16999a37a204488e11f86eddc2999707d43967197e257014d7ed72c8fc4348c192fa47eb352d1d9d05637cefd0d2e24e9aa4c8
   languageName: node
   linkType: hard
 
