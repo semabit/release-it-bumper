@@ -4,7 +4,7 @@
   "description": "Version read/write plugin for release-it",
   "main": "index.js",
   "scripts": {
-    "test": "ava test.js --verbose",
+    "test": "ava --verbose",
     "release": "release-it",
     "changelog": "auto-changelog"
   },
@@ -38,11 +38,11 @@
   "devDependencies": {
     "auto-changelog": "^1.16.1",
     "ava": "^2.0.0",
-    "release-it": "^14.2.0",
+    "release-it": "^19.2.4",
     "sinon": "^7.3.2"
   },
-  "peerDpendencies": {
-    "release-it": "^14.2.0"
+  "peerDependencies": {
+    "release-it": "^19.2.4"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
