@@ -1,10 +1,10 @@
-const fs = require('fs');
-const {EOL} = require('os');
-const test = require('ava');
-const mock = require('mock-fs');
-const {factory, runTasks} = require('release-it/test/util/index.js');
-const Plugin = require('.');
-const YAML = require('yamljs');
+import fs from 'fs';
+import {EOL} from 'os';
+import test from 'ava';
+import mock from 'mock-fs';
+import {factory, runTasks} from 'release-it/test/util/index.js';
+import Plugin from './index.js';
+import YAML from 'yamljs';
 
 mock({
     './bower.json': JSON.stringify({version: '1.0.0'}),
@@ -150,14 +150,32 @@ test('should write version to all paths', async t => {
 });
 
 test('should write version to all paths deep', async t => {
-    const options = {[namespace]: {out: {file: './deep.multi.json', paths: ['version1.release', 'version2.pre-release']}}};
+    const options = {
+        [namespace]: {
+            out: {
+                file: './deep.multi.json',
+                paths: ['version1.release', 'version2.pre-release']
+            }
+        }
+    };
     const plugin = await factory(Plugin, {namespace, options});
     await plugin.bump('1.2.3');
-    t.is(readFile('./deep.multi.json'), JSON.stringify({version1: {release: '1.2.3'}, version2: {'pre-release': '1.2.3'}}, null, '  '));
+    t.is(readFile('./deep.multi.json'), JSON.stringify({
+        version1: {release: '1.2.3'},
+        version2: {'pre-release': '1.2.3'}
+    }, null, '  '));
 });
 
 test('should write indented XML file with all paths', async t => {
-    const options = {[namespace]: {out: [{file: './multi-versions.xml', type: 'application/xml', paths: ['data.release', 'data.pre-release']}]}};
+    const options = {
+        [namespace]: {
+            out: [{
+                file: './multi-versions.xml',
+                type: 'application/xml',
+                paths: ['data.release', 'data.pre-release']
+            }]
+        }
+    };
     const plugin = await factory(Plugin, {namespace, options});
     await plugin.bump('0.2.3');
     t.is(readFile('./multi-versions.xml'), `<?xml version="1.0" encoding="utf-8" ?>${EOL}<data>${EOL}  <release>0.2.3</release>${EOL}  <pre-release>0.2.3</pre-release>${EOL}</data>`);

@@ -1,13 +1,13 @@
-const fs = require('fs');
-const os = require('os');
-const util = require('util');
-const get = require('lodash.get');
-const set = require('lodash.set');
-const castArray = require('lodash.castarray');
-const detectIndent = require('detect-indent');
-const {Plugin} = require('release-it');
-const YAML = require('yamljs');
-const xml2js = require('xml2js');
+import fs from 'fs';
+import os from 'os';
+import util from 'util';
+import get from 'lodash.get';
+import set from 'lodash.set';
+import castArray from 'lodash.castarray';
+import detectIndent from 'detect-indent';
+import {Plugin} from 'release-it';
+import YAML from 'yamljs';
+import xml2js from 'xml2js';
 
 const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
@@ -95,4 +95,4 @@ class Bumper extends Plugin {
     }
 }
 
-module.exports = Bumper;
+export default Bumper;
