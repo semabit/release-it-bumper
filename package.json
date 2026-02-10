@@ -22,7 +22,7 @@
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "https://github.com/semabit/release-it-bumper.git"
+    "url": "git+https://github.com/semabit/release-it-bumper.git"
   },
   "homepage": "https://github.com/semabit/release-it-bumper#readme",
   "author": {
