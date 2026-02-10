@@ -75,5 +75,6 @@
     "unreleased": true,
     "ignoreCommitPattern": "(Release (v)?|Merge (remote-tracking )?branch)",
     "sortCommits": "date"
-  }
+  },
+  "packageManager": "yarn@4.12.0"
 }
