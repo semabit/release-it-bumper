@@ -30,7 +30,7 @@
     "name": "Lars Kappert"
   },
   "dependencies": {
-    "detect-indent": "^6.0.0",
+    "detect-indent": "^7.0.2",
     "lodash.castarray": "^4.4.0",
     "lodash.get": "^4.4.2",
     "lodash.set": "^4.3.2",
