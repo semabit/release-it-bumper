@@ -1,0 +1,14 @@
+name: Dependabot Security Auto Assign
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, labeled]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  security-auto-assign:
+    uses: semabit/gh-workflows/.github/workflows/dependabot-security-auto-assign.yml@main
+    with:
+      assignees-json: '["driiftkiing"]'
