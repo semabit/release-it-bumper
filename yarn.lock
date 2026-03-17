@@ -2078,11 +2078,11 @@ __metadata:
   linkType: hard
 
 "dot-prop@npm:^4.1.0":
-  version: 4.2.0
-  resolution: "dot-prop@npm:4.2.0"
+  version: 4.2.1
+  resolution: "dot-prop@npm:4.2.1"
   dependencies:
     is-obj: "npm:^1.0.0"
-  checksum: 10c0/307a2c3fc94c02a4cd52c28d2782f448a4a64e493da077dd1e99105248230309b8aff0bcd6bb02151dd613e72ebf31ba4bd2664b54ffdf39a044ac85365a96cc
+  checksum: 10c0/ea0a98871ef4de0cce05325979517a43b70eb3a3671254fce78f2629c125d5ddb69cfdd5570ace4e41d9f02ced06374ea0444d1aeae70290a19f73e02093318e
   languageName: node
   linkType: hard
 
