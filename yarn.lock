@@ -858,7 +858,7 @@ __metadata:
   dependencies:
     auto-changelog: "npm:^1.16.1"
     ava: "npm:^2.0.0"
-    detect-indent: "npm:^6.0.0"
+    detect-indent: "npm:^7.0.2"
     lodash.castarray: "npm:^4.4.0"
     lodash.get: "npm:^4.4.2"
     lodash.set: "npm:^4.3.2"
@@ -2054,10 +2054,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"detect-indent@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "detect-indent@npm:6.0.0"
-  checksum: 10c0/6ca3511e6189d63d22e80ee81d847d81b800dc6a23dd23b10e3d39ca8407b5cf763e8dbef25ac18b3b75dd14c4ab00ad39316656eec5ae3932abf745967d9bf4
+"detect-indent@npm:^7.0.2":
+  version: 7.0.2
+  resolution: "detect-indent@npm:7.0.2"
+  checksum: 10c0/adb1334ca3fe516dc6817aff0a777540b88643ab92fe13a72d0f5d12721ca796ffdd0e5fedb7b45e6e82657156c6ad44f5d5758157f0439532ae7d07b595146b
   languageName: node
   linkType: hard
 
