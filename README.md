@@ -32,7 +32,7 @@ for `.yaml` file:
 In case the `in` option is used, the version from this file will take precedence over the `version` from `package.json`
 or the latest Git tag (which release-it uses by default).
 
-The default `type` is `application/json`, but `text/plain` and `application/x-yaml` are also supported.
+The default `type` is `application/json`, but `text/plain`, `application/x-yaml` and `application/xml` are also supported.
 In that case the whole file is used to read and/or write the version.
 
 ```json
@@ -76,3 +76,6 @@ The `path` option (default: `"version"`) can be used to change a different prope
   }
 }
 ```
+
+Instead of a single `path`, an array `paths` can be given to write the version to several properties of one file
+(for `in`, the first entry is read).
