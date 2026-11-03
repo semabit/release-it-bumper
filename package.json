@@ -35,7 +35,7 @@
     "lodash.get": "^4.4.2",
     "lodash.set": "^4.3.2",
     "mock-fs": "^5.5.0",
-    "xml2js": "^0.5.0",
+    "xml2js": "^0.6.2",
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
